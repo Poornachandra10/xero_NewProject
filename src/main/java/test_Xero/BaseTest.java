@@ -1,4 +1,4 @@
-package test;
+package test_Xero;
 
 import java.lang.reflect.Method;
 
@@ -10,6 +10,8 @@ import org.apache.logging.log4j.Logger;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
+import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
@@ -88,8 +90,52 @@ public class BaseTest {
 		String sFileNamePrefix = new SimpleDateFormat("yyyyMMddHHmmss").format(new Date()); 
 		String filePath= System.getProperty("user.dir")+"\\src\\test\\resources\\reports\\"+sFileNamePrefix+"_ZERO.html";
 		
-		
-		
+		report =new ExtentHtmlReporter(filePath);
+		extent.attachReporter(report);
+		logger.debug("Report configuration is success");
 	}
+
+	@AfterSuite
+	public void teardown() {
+		extent.flush();
+	}
+
+
+	@AfterMethod
+	public void closeBrowser() {
+		BaseTest.removeDriver();
+	}
+
+	
+public static WebDriver getDriver() {
+return threadLocalDriver.get();
+}
+
+public static void removeDriver() {
+	BaseTest.getDriver().close();
+	threadLocalDriver.remove();
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
