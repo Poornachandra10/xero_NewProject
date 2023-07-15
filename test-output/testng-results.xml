@@ -2,39 +2,39 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-07-13T14:29:53 CDT" name="Default suite" finished-at="2023-07-13T14:30:00 CDT" duration-ms="7227">
+  <suite started-at="2023-07-14T19:32:28 CDT" name="Default suite" finished-at="2023-07-14T19:32:33 CDT" duration-ms="4589">
     <groups>
     </groups>
-    <test started-at="2023-07-13T14:29:53 CDT" name="Default test" finished-at="2023-07-13T14:30:00 CDT" duration-ms="7227">
-      <class name="test.login_xero_Test">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:test.login_xero_Test@5c8eee0f]" started-at="2023-07-13T14:29:53 CDT" name="setUp" finished-at="2023-07-13T14:29:53 CDT" duration-ms="82" status="PASS">
+    <test started-at="2023-07-14T19:32:28 CDT" name="Default test" finished-at="2023-07-14T19:32:33 CDT" duration-ms="4589">
+      <class name="test_Xero.login_xero_Test">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:test_Xero.login_xero_Test@565b064f]" started-at="2023-07-14T19:32:28 CDT" name="setUp" finished-at="2023-07-14T19:32:28 CDT" duration-ms="95" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method is-config="true" signature="setDriver(java.lang.reflect.Method)[pri:0, instance:test.login_xero_Test@5c8eee0f]" started-at="2023-07-13T14:29:53 CDT" name="setDriver" finished-at="2023-07-13T14:29:56 CDT" duration-ms="3207" status="PASS">
+        <test-method is-config="true" signature="setDriver(java.lang.reflect.Method)[pri:0, instance:test_Xero.login_xero_Test@565b064f]" started-at="2023-07-14T19:32:28 CDT" name="setDriver" finished-at="2023-07-14T19:32:30 CDT" duration-ms="1274" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[public void test.login_xero_Test.LoginTestCase()]]>
+                <![CDATA[public void test_Xero.login_xero_Test.Navigate_to_XERO_Testcase_01() throws java.io.IOException]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setDriver -->
-        <test-method signature="LoginTestCase()[pri:0, instance:test.login_xero_Test@5c8eee0f]" started-at="2023-07-13T14:29:56 CDT" name="LoginTestCase" finished-at="2023-07-13T14:30:00 CDT" duration-ms="3885" status="PASS">
+        <test-method signature="Navigate_to_XERO_Testcase_01()[pri:0, instance:test_Xero.login_xero_Test@565b064f]" started-at="2023-07-14T19:32:30 CDT" name="Navigate_to_XERO_Testcase_01" finished-at="2023-07-14T19:32:33 CDT" duration-ms="3162" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- LoginTestCase -->
-        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test.login_xero_Test@5c8eee0f]" started-at="2023-07-13T14:30:00 CDT" name="closeBrowser" finished-at="2023-07-13T14:30:00 CDT" duration-ms="106" status="PASS">
+        </test-method> <!-- Navigate_to_XERO_Testcase_01 -->
+        <test-method is-config="true" signature="closeBrowser()[pri:0, instance:test_Xero.login_xero_Test@565b064f]" started-at="2023-07-14T19:32:33 CDT" name="closeBrowser" finished-at="2023-07-14T19:32:33 CDT" duration-ms="120" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- closeBrowser -->
-        <test-method is-config="true" signature="teardown()[pri:0, instance:test.login_xero_Test@5c8eee0f]" started-at="2023-07-13T14:30:00 CDT" name="teardown" finished-at="2023-07-13T14:30:00 CDT" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="teardown()[pri:0, instance:test_Xero.login_xero_Test@565b064f]" started-at="2023-07-14T19:32:33 CDT" name="teardown" finished-at="2023-07-14T19:32:33 CDT" duration-ms="2" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- teardown -->
-      </class> <!-- test.login_xero_Test -->
+      </class> <!-- test_Xero.login_xero_Test -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

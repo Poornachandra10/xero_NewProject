@@ -16,7 +16,7 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeSuite;
 
 import com.aventstack.extentreports.ExtentReports;
-
+import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.reporter.ExtentHtmlReporter;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
@@ -27,8 +27,10 @@ public class BaseTest {
 
 	protected static ExtentReports extent = new ExtentReports();
 
-	protected static ExtentHtmlReporter report = null;
-
+	protected static ExtentHtmlReporter report =null;
+	
+	public static ExtentTest test=null;
+	
 	protected static Logger logger = LogManager.getLogger("");
 
 	@BeforeMethod
@@ -36,7 +38,7 @@ public class BaseTest {
 		WebDriver driver = BaseTest.getBrowserType("chrome", false);
 		logger.debug("BaseTest : setDriver : driver configuration done");
 		threadLocalDriver.set(driver);
-		;
+		
 		logger.debug("BaseTest: setDriver: test: obj created");
 	}
 
